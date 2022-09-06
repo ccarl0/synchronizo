@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;mic_waveViewer.Name" xml:space="preserve">
+    <value>mic_waveViewer</value>
+  </data>
+  <data name="&gt;&gt;mic_waveViewer.Type" xml:space="preserve">
+    <value>NAudio.Gui.WaveViewer, NAudio.WinForms, Version=2.1.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
+  </data>
+  <data name="&gt;&gt;mic_waveViewer.Parent" xml:space="preserve">
+    <value>wave_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;mic_waveViewer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wave_viewer_panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="wave_viewer_panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 697</value>
+  </data>
+  <data name="wave_viewer_panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1586, 165</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wave_viewer_panel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;wave_viewer_panel.Name" xml:space="preserve">
+    <value>wave_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;wave_viewer_panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wave_viewer_panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wave_viewer_panel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mic_waveViewer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="mic_waveViewer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1119, 123</value>
+  </data>
+  <data name="mic_waveViewer.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;mic_waveViewer.Name" xml:space="preserve">
+    <value>mic_waveViewer</value>
+  </data>
+  <data name="&gt;&gt;mic_waveViewer.Type" xml:space="preserve">
+    <value>NAudio.Gui.WaveViewer, NAudio.WinForms, Version=2.1.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
+  </data>
+  <data name="&gt;&gt;mic_waveViewer.Parent" xml:space="preserve">
+    <value>wave_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;mic_waveViewer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="input_comboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="input_comboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="input_comboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 467</value>
+  </data>
+  <data name="input_comboBox.MaxDropDownItems" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="input_comboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 26</value>
+  </data>
+  <data name="input_comboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="input_comboBox.Text" xml:space="preserve">
+    <value>Selected Input Device</value>
+  </data>
+  <data name="&gt;&gt;input_comboBox.Name" xml:space="preserve">
+    <value>input_comboBox</value>
+  </data>
+  <data name="&gt;&gt;input_comboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;input_comboBox.Parent" xml:space="preserve">
+    <value>data_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;input_comboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="output_progressBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="output_progressBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 586</value>
+  </data>
+  <data name="output_progressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 24</value>
+  </data>
+  <data name="output_progressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;output_progressBar.Name" xml:space="preserve">
+    <value>output_progressBar</value>
+  </data>
+  <data name="&gt;&gt;output_progressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;output_progressBar.Parent" xml:space="preserve">
+    <value>data_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;output_progressBar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="video_browser_button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="video_browser_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="video_browser_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 28</value>
+  </data>
+  <data name="video_browser_button.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="video_browser_button.Text" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="&gt;&gt;video_browser_button.Name" xml:space="preserve">
+    <value>video_browser_button</value>
+  </data>
+  <data name="&gt;&gt;video_browser_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;video_browser_button.Parent" xml:space="preserve">
+    <value>data_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;video_browser_button.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="headphone_icon.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="headphone_icon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAScAAAEnAY288MwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABb0lEQVRIS+2Vu0oDURCGp1AxQgimkhQW5hksLcTCwucQBOv4BHZ2CoGAYG0R9BFExMbeTvD+CCp4
+        Wf8/zBxms7MxgWznwgd7/tsJBBLJsqxSQrEMPLMk8soIRQNPHWyDHrgBHwrfqdGrR10jFAmeDfAAeBjF
+        PViPNkhREFkAXfAD/NAdOFX47j1mD8F8Ya8giBwDK36DA9AMck31mLF8t5DLHUS2XPgRrHk/ghnNWm8z
+        57sgP9Grhj7Bqg+Oglnt8PACFpPnQh0NkH3Tx4Ud1+8k3QX6ar6BOdPHhR3t8tBPugs8q3lt2qSwqxtP
+        SVOjpQY5MnNS2HU7LdVkGVwCM3bBHjgbHiiDWe2waztXYAUMTBPJDrjg+/BQGdpjh12/dQ7SF2NM84J3
+        kBPINC9Ipuf/Ar81MKv8krktJ04g07yA29IG/B36AhQZ4h/ObTQWwax27AJucbPtQw2wBGp6njHvLyyL
+        pwa40UievVRDJr/gB4kfojVM0gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="headphone_icon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="headphone_icon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 548</value>
+  </data>
+  <data name="headphone_icon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="headphone_icon.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;headphone_icon.Name" xml:space="preserve">
+    <value>headphone_icon</value>
+  </data>
+  <data name="&gt;&gt;headphone_icon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;headphone_icon.Parent" xml:space="preserve">
+    <value>data_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;headphone_icon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mic_icon.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mic_icon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAMIAAADCAU+JHNcAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABcElEQVRIS+3WPU6CQRDG8aWgkITGI1DQ2AGFR5Aj0FJS2JkQogew5RZgDNpxBFsLEw/gR2KrhcaY
+        1/+Du8mEnX21sLBwkl+y++zMvAUWhqqqvkUNcIH7SOeB17vNDS1qjHfoYikbezOWGyZUBy+wiy29dbzZ
+        xA0TahoX1Zl6s4kbJtTSLCpZerOJGybU2iwqWXuziRsmGjaLSv4/4C61/tgHqBa68fzjD1BdtOyuTZ4F
+        IczxhB2cIy0qUY96NTPP9mVBCDPosI+TeK6jHvXqPMv2ZUEIw9h8iD28xbtHb+pRr+7DbF8WhNDGIx6w
+        iyOkhdv0ph71aqad7dsONmEII+hwhiYOcIXXSGdlelOPekfuLi8UahEHr9GLmRY247kHvemysLOWGwrV
+        wDE+oOAOl5HOyvSmnoa3Q9zQovo4xQ0UiM7K+t6M5YYl1K14byVuWPLrH6D0Q66g/yLkOUp3vW3+AErc
+        MKEm0KHOxJv9UoVP3uiRr2dOhQIAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="mic_icon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mic_icon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 467</value>
+  </data>
+  <data name="mic_icon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="mic_icon.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;mic_icon.Name" xml:space="preserve">
+    <value>mic_icon</value>
+  </data>
+  <data name="&gt;&gt;mic_icon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mic_icon.Parent" xml:space="preserve">
+    <value>data_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;mic_icon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="output_comboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="output_comboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="output_comboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 548</value>
+  </data>
+  <data name="output_comboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 26</value>
+  </data>
+  <data name="output_comboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="output_comboBox.Text" xml:space="preserve">
+    <value>Selected Output Device</value>
+  </data>
+  <data name="&gt;&gt;output_comboBox.Name" xml:space="preserve">
+    <value>output_comboBox</value>
+  </data>
+  <data name="&gt;&gt;output_comboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;output_comboBox.Parent" xml:space="preserve">
+    <value>data_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;output_comboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="input_progressBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="input_progressBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 505</value>
+  </data>
+  <data name="input_progressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 24</value>
+  </data>
+  <data name="input_progressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;input_progressBar.Name" xml:space="preserve">
+    <value>input_progressBar</value>
+  </data>
+  <data name="&gt;&gt;input_progressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;input_progressBar.Parent" xml:space="preserve">
+    <value>data_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;input_progressBar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="data_viewer_panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1190, 25</value>
+  </data>
+  <data name="data_viewer_panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 631</value>
+  </data>
+  <data name="data_viewer_panel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;data_viewer_panel.Name" xml:space="preserve">
+    <value>data_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;data_viewer_panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;data_viewer_panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;data_viewer_panel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="video_viewer_wmp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="&gt;&gt;noVideo_RichTextBox.Name" xml:space="preserve">
+    <value>noVideo_RichTextBox</value>
+  </data>
+  <data name="&gt;&gt;noVideo_RichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;noVideo_RichTextBox.Parent" xml:space="preserve">
+    <value>video_panel</value>
+  </data>
+  <data name="&gt;&gt;noVideo_RichTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;video_viewer_wmp.Name" xml:space="preserve">
+    <value>video_viewer_wmp</value>
+  </data>
+  <data name="&gt;&gt;video_viewer_wmp.Type" xml:space="preserve">
+    <value>AxWMPLib.AxWindowsMediaPlayer, AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;video_viewer_wmp.Parent" xml:space="preserve">
+    <value>video_panel</value>
+  </data>
+  <data name="&gt;&gt;video_viewer_wmp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="video_panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="video_panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1119, 631</value>
+  </data>
+  <data name="video_panel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;video_panel.Name" xml:space="preserve">
+    <value>video_panel</value>
+  </data>
+  <data name="&gt;&gt;video_panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;video_panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;video_panel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="noVideo_RichTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="noVideo_RichTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Harvest, 25.8pt</value>
+  </data>
+  <data name="noVideo_RichTextBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="noVideo_RichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 565</value>
+  </data>
+  <data name="noVideo_RichTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="noVideo_RichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1119, 66</value>
+  </data>
+  <data name="noVideo_RichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="noVideo_RichTextBox.Text" xml:space="preserve">
+    <value>Select a video by clicking the browse button</value>
+  </data>
+  <data name="&gt;&gt;noVideo_RichTextBox.Name" xml:space="preserve">
+    <value>noVideo_RichTextBox</value>
+  </data>
+  <data name="&gt;&gt;noVideo_RichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;noVideo_RichTextBox.Parent" xml:space="preserve">
+    <value>video_panel</value>
+  </data>
+  <data name="&gt;&gt;noVideo_RichTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="video_viewer_wmp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="video_viewer_wmp.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="video_viewer_wmp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="video_viewer_wmp.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA7QAAAAIB
+        AAAAAQAAAAAAAAAAAAAAANgAAAABAwAACAA2AAAAQAAiAC4ALgAvAC4ALgAvAGQAYQB0AGEALwBiAGIA
+        YwAtAGQAbwBjAHUALgBtAHAANAAiAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIAAAAAAAMA
+        AQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsAAAALAAAA
+        CwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAAdEUAAGsqAAAL
+</value>
+  </data>
+  <data name="video_viewer_wmp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>840, 513</value>
+  </data>
+  <data name="video_viewer_wmp.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="video_viewer_wmp.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;video_viewer_wmp.Name" xml:space="preserve">
+    <value>video_viewer_wmp</value>
+  </data>
+  <data name="&gt;&gt;video_viewer_wmp.Type" xml:space="preserve">
+    <value>AxWMPLib.AxWindowsMediaPlayer, AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;video_viewer_wmp.Parent" xml:space="preserve">
+    <value>video_panel</value>
+  </data>
+  <data name="&gt;&gt;video_viewer_wmp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="audio_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>67</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1586, 862</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>synchronizo</value>
+  </data>
+  <data name="&gt;&gt;audio_timer.Name" xml:space="preserve">
+    <value>audio_timer</value>
+  </data>
+  <data name="&gt;&gt;audio_timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>synchronizo_home</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
