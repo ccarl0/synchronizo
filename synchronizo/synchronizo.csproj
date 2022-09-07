@@ -36,6 +36,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="aspnet_regsql">
+      <HintPath>..\..\..\..\..\..\Windows\microsoft.net\framework64\v2.0.50727\aspnet_regsql.exe</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Win32.Registry, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Registry.4.7.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
     </Reference>
@@ -68,6 +71,7 @@
     <Reference Include="System.Security.Principal.Windows, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -104,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -155,6 +160,33 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\playpause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\play.png.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\hp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\mic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\synchronizo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\speaker3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\volume-off.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

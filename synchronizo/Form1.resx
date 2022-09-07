@@ -154,7 +154,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;wave_viewer_panel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="mic_waveViewer.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 25</value>
@@ -208,7 +208,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;input_comboBox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="output_progressBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -232,7 +232,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;output_progressBar.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="video_browser_button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -259,7 +259,34 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;video_browser_button.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
+  </data>
+  <data name="vScrollBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="vScrollBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 113</value>
+  </data>
+  <data name="vScrollBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 205</value>
+  </data>
+  <data name="vScrollBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;vScrollBar1.Name" xml:space="preserve">
+    <value>vScrollBar1</value>
+  </data>
+  <data name="&gt;&gt;vScrollBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.VScrollBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vScrollBar1.Parent" xml:space="preserve">
+    <value>data_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;vScrollBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="modeUpdate_progressBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="modeUpdate_progressBar.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 93</value>
@@ -280,16 +307,16 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;modeUpdate_progressBar.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="modeSelector_comboBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="modeSelector_comboBox.Items" xml:space="preserve">
-    <value>Noiser is Faster</value>
+    <value>Noisy is Faster</value>
   </data>
   <data name="modeSelector_comboBox.Items1" xml:space="preserve">
-    <value>Noiser is Slower</value>
+    <value>Noisy is Slower</value>
   </data>
   <data name="modeSelector_comboBox.Items2" xml:space="preserve">
     <value>Deactivate</value>
@@ -316,7 +343,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;modeSelector_comboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="molt_richTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt</value>
@@ -343,23 +370,10 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;molt_richTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="headphone_icon.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="headphone_icon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
-        JgAAASYBX/sSKAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFvSURBVEhL7ZW7
-        SgNREIanUDFCCKaSFBbmGSwtxMLC5xAE6/gEdnYKgYBgbRH0EUTExt5O8P4IKnhZ/z/MHGazszGBbOfC
-        B3v+2wkEEsmyrFJCsQw8syTyyghFA08dbIMeuAEfCt+p0atHXSMUCZ4N8AB4GMU9WI82SFEQWQBd8AP8
-        0B04VfjuPWYPwXxhryCIHAMrfoMD0AxyTfWYsXy3kMsdRLZc+BGseT+CGc1abzPnuyA/0auGPsGqD46C
-        We3w8AIWk+dCHQ2QfdPHhR3X7yTdBfpqvoE508eFHe3y0E+6CzyreW3apLCrG09JU6OlBjkyc1LYdTst
-        1WQZXAIzdsEeOBseKINZ7bBrO1dgBQxME8kOuOD78FAZ2mOHXb91DtIXY0zzgneQE8g0L0im5/8CvzUw
-        q/ySuS0nTiDTvIDb0gb8HfoCFBniH85tNBbBrHbsAm5xs+1DDbAEanqeMe8vLIunBrjRSJ69VEMmv+AH
-        iR+iNUzSAAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="headphone_icon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -383,23 +397,10 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;headphone_icon.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="mic_icon.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="mic_icon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        wQAAAMEB4jA9ugAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFwSURBVEhL7dY9
-        ToJBEMbxpaCQhMYjUNDYAYVHkCPQUlLYmRCiB7DlFmAM2nEEWwsTD+BHYquFxpjX/4O7yYSdfbWwsHCS
-        X7L77My8BRaGqqq+RQ1wgftI54HXu80NLWqMd+hiKRt7M5YbJlQHL7CLLb11vNnEDRNqGhfVmXqziRsm
-        1NIsKll6s4kbJtTaLCpZe7OJGyYaNotK/j/gLrX+2AeoFrrx/OMPUF207K5NngUhzPGEHZwjLSpRj3o1
-        M8/2ZUEIM+iwj5N4rqMe9eo8y/ZlQQjD2HyIPbzFu0dv6lGv7sNsXxaE0MYjHrCLI6SF2/SmHvVqpp3t
-        2w42YQgj6HCGJg5whddIZ2V6U496R+4uLxRqEQev0YuZFjbjuQe96bKws5YbCtXAMT6g4A6Xkc7K9Kae
-        hrdD3NCi+jjFDRSIzsr63ozlhiXUrXhvJW5Y8usfoPRDrqD/IuQ5Sne9bf4AStwwoSbQoc7Em/1ShU/e
-        6JGvZ06FAgAAAABJRU5ErkJggg==
-</value>
   </data>
   <data name="mic_icon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -423,7 +424,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;mic_icon.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="output_comboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -453,7 +454,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;output_comboBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="input_progressBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -477,7 +478,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;input_progressBar.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="data_viewer_panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>1190, 25</value>
@@ -498,7 +499,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;data_viewer_panel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <metadata name="video_viewer_wmp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -546,7 +547,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;video_panel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="noVideo_RichTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -597,11 +598,11 @@
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA7QAAAAIB
-        AAAAAQAAAAAAAAAAAAAAANgAAAABAwAACAA2AAAAQAAiAC4ALgAvAC4ALgAvAGQAYQB0AGEALwBiAGIA
-        YwAtAGQAbwBjAHUALgBtAHAANAAiAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIAAAAAAAMA
-        AQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsAAAALAAAA
-        CwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAAdEUAAGsqAAAL
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAuQAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAKQAAAABAwAACAACAAAAAAAFAAAAAAAAAPA/AwAAAAAABQAAAAAAAAAAAAgA
+        AgAAAAAAAwABAAAACwD//wMAAAAAAAsA//8IAAIAAAAAAAMAMgAAAAsAAAAIAAoAAABuAG8AbgBlAAAA
+        CwAAAAsAAAALAP//CwD//wsAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAAIAAIAAAAAAAsAAAB0RQAA
+        ayoAAAs=
 </value>
   </data>
   <data name="video_viewer_wmp.Size" type="System.Drawing.Size, System.Drawing">
@@ -633,6 +634,136 @@
   </metadata>
   <metadata name="modeSelectorUpdater_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>322, 17</value>
+  </metadata>
+  <data name="volume_button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="volume_button.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="volume_button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="volume_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="volume_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="volume_button.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;volume_button.Name" xml:space="preserve">
+    <value>volume_button</value>
+  </data>
+  <data name="&gt;&gt;volume_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;volume_button.Parent" xml:space="preserve">
+    <value>volumeZone_panel</value>
+  </data>
+  <data name="&gt;&gt;volume_button.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="playPause_Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="playPause_Button.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="playPause_Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACySURBVEhL7dTN
+        CcJAEIbhBRF70IMdCJZhIepFzzaQgxcFK0psRfCiNfjzfiELS4huwB1RyAcPYcKGgUkyrstPZow1pmX1
+        OgMssMG8qqPp44wHbsjQQ1P20DlPdTQThA9JgSHqyRGeUx2NxhI+5F0xQ5ikDeSOAzRGJXkD74gRzBrI
+        BafavaQNmvxXA9MRmb1k08802Y9mvio+WXY7tIrW9Qoa17toPS+xra6t1nWXb8e5J3pCqoVs++DOAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="playPause_Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="playPause_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 656</value>
+  </data>
+  <data name="playPause_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="playPause_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;playPause_Button.Name" xml:space="preserve">
+    <value>playPause_Button</value>
+  </data>
+  <data name="&gt;&gt;playPause_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playPause_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;playPause_Button.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;volume_trackBar.Name" xml:space="preserve">
+    <value>volume_trackBar</value>
+  </data>
+  <data name="&gt;&gt;volume_trackBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;volume_trackBar.Parent" xml:space="preserve">
+    <value>volumeZone_panel</value>
+  </data>
+  <data name="&gt;&gt;volume_trackBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="volumeZone_panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 656</value>
+  </data>
+  <data name="volumeZone_panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 40</value>
+  </data>
+  <data name="volumeZone_panel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;volumeZone_panel.Name" xml:space="preserve">
+    <value>volumeZone_panel</value>
+  </data>
+  <data name="&gt;&gt;volumeZone_panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;volumeZone_panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;volumeZone_panel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="volume_trackBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 9</value>
+  </data>
+  <data name="volume_trackBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 56</value>
+  </data>
+  <data name="volume_trackBar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="volume_trackBar.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;volume_trackBar.Name" xml:space="preserve">
+    <value>volume_trackBar</value>
+  </data>
+  <data name="&gt;&gt;volume_trackBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;volume_trackBar.Parent" xml:space="preserve">
+    <value>volumeZone_panel</value>
+  </data>
+  <data name="&gt;&gt;volume_trackBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="volumeTrackBar_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>570, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2446,6 +2577,12 @@
     <value>modeSelectorUpdater_timer</value>
   </data>
   <data name="&gt;&gt;modeSelectorUpdater_timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;volumeTrackBar_timer.Name" xml:space="preserve">
+    <value>volumeTrackBar_timer</value>
+  </data>
+  <data name="&gt;&gt;volumeTrackBar_timer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
