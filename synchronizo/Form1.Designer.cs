@@ -47,6 +47,11 @@ namespace synchronizo
             this.noVideo_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.video_viewer_wmp = new AxWMPLib.AxWindowsMediaPlayer();
             this.audio_timer = new System.Windows.Forms.Timer(this.components);
+            this.peaksSum_timer = new System.Windows.Forms.Timer(this.components);
+            this.molt_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.modeSelector_comboBox = new System.Windows.Forms.ComboBox();
+            this.modeUpdate_progressBar = new System.Windows.Forms.ProgressBar();
+            this.modeSelectorUpdater_timer = new System.Windows.Forms.Timer(this.components);
             this.wave_viewer_panel.SuspendLayout();
             this.data_viewer_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.headphone_icon)).BeginInit();
@@ -95,6 +100,9 @@ namespace synchronizo
             // data_viewer_panel
             // 
             this.data_viewer_panel.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.data_viewer_panel.Controls.Add(this.modeUpdate_progressBar);
+            this.data_viewer_panel.Controls.Add(this.modeSelector_comboBox);
+            this.data_viewer_panel.Controls.Add(this.molt_richTextBox);
             this.data_viewer_panel.Controls.Add(this.headphone_icon);
             this.data_viewer_panel.Controls.Add(this.mic_icon);
             this.data_viewer_panel.Controls.Add(this.output_comboBox);
@@ -158,9 +166,41 @@ namespace synchronizo
             // 
             // audio_timer
             // 
-            this.audio_timer.Enabled = true;
             this.audio_timer.Interval = 10;
             this.audio_timer.Tick += new System.EventHandler(this.audio_timer_Tick);
+            // 
+            // peaksSum_timer
+            // 
+            this.peaksSum_timer.Interval = 5000;
+            this.peaksSum_timer.Tick += new System.EventHandler(this.peaksSum_timer_Tick);
+            // 
+            // molt_richTextBox
+            // 
+            this.molt_richTextBox.BackColor = System.Drawing.Color.Cornsilk;
+            this.molt_richTextBox.Cursor = System.Windows.Forms.Cursors.No;
+            resources.ApplyResources(this.molt_richTextBox, "molt_richTextBox");
+            this.molt_richTextBox.Name = "molt_richTextBox";
+            this.molt_richTextBox.ReadOnly = true;
+            // 
+            // modeSelector_comboBox
+            // 
+            resources.ApplyResources(this.modeSelector_comboBox, "modeSelector_comboBox");
+            this.modeSelector_comboBox.FormattingEnabled = true;
+            this.modeSelector_comboBox.Items.AddRange(new object[] {
+            resources.GetString("modeSelector_comboBox.Items"),
+            resources.GetString("modeSelector_comboBox.Items1"),
+            resources.GetString("modeSelector_comboBox.Items2")});
+            this.modeSelector_comboBox.Name = "modeSelector_comboBox";
+            // 
+            // modeUpdate_progressBar
+            // 
+            resources.ApplyResources(this.modeUpdate_progressBar, "modeUpdate_progressBar");
+            this.modeUpdate_progressBar.Name = "modeUpdate_progressBar";
+            // 
+            // modeSelectorUpdater_timer
+            // 
+            this.modeSelectorUpdater_timer.Interval = 500;
+            this.modeSelectorUpdater_timer.Tick += new System.EventHandler(this.modeSelectorUpdater_timer_Tick);
             // 
             // synchronizo_home
             // 
@@ -198,6 +238,11 @@ namespace synchronizo
         private ComboBox output_comboBox;
         private PictureBox headphone_icon;
         private PictureBox mic_icon;
+        private Timer peaksSum_timer;
+        private RichTextBox molt_richTextBox;
+        private ComboBox modeSelector_comboBox;
+        private ProgressBar modeUpdate_progressBar;
+        private Timer modeSelectorUpdater_timer;
     }
 }
 
