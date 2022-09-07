@@ -39,7 +39,6 @@ namespace synchronizo
             this.output_progressBar = new System.Windows.Forms.ProgressBar();
             this.video_browser_button = new System.Windows.Forms.Button();
             this.data_viewer_panel = new System.Windows.Forms.Panel();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.modeUpdate_progressBar = new System.Windows.Forms.ProgressBar();
             this.modeSelector_comboBox = new System.Windows.Forms.ComboBox();
             this.molt_richTextBox = new System.Windows.Forms.RichTextBox();
@@ -108,7 +107,6 @@ namespace synchronizo
             // data_viewer_panel
             // 
             this.data_viewer_panel.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.data_viewer_panel.Controls.Add(this.vScrollBar1);
             this.data_viewer_panel.Controls.Add(this.modeUpdate_progressBar);
             this.data_viewer_panel.Controls.Add(this.modeSelector_comboBox);
             this.data_viewer_panel.Controls.Add(this.molt_richTextBox);
@@ -121,11 +119,6 @@ namespace synchronizo
             this.data_viewer_panel.Controls.Add(this.output_progressBar);
             resources.ApplyResources(this.data_viewer_panel, "data_viewer_panel");
             this.data_viewer_panel.Name = "data_viewer_panel";
-            // 
-            // vScrollBar1
-            // 
-            resources.ApplyResources(this.vScrollBar1, "vScrollBar1");
-            this.vScrollBar1.Name = "vScrollBar1";
             // 
             // modeUpdate_progressBar
             // 
@@ -311,7 +304,6 @@ namespace synchronizo
         private ComboBox modeSelector_comboBox;
         private ProgressBar modeUpdate_progressBar;
         private Timer modeSelectorUpdater_timer;
-        private VScrollBar vScrollBar1;
         private Button playPause_Button;
         public AxWMPLib.AxWindowsMediaPlayer video_viewer_wmp;
         private Button volume_button;

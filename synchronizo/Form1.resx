@@ -208,7 +208,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;input_comboBox.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="output_progressBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -232,7 +232,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;output_progressBar.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="video_browser_button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -259,31 +259,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;video_browser_button.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="vScrollBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="vScrollBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 113</value>
-  </data>
-  <data name="vScrollBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 205</value>
-  </data>
-  <data name="vScrollBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;vScrollBar1.Name" xml:space="preserve">
-    <value>vScrollBar1</value>
-  </data>
-  <data name="&gt;&gt;vScrollBar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.VScrollBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;vScrollBar1.Parent" xml:space="preserve">
-    <value>data_viewer_panel</value>
-  </data>
-  <data name="&gt;&gt;vScrollBar1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>8</value>
   </data>
   <data name="modeUpdate_progressBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -307,7 +283,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;modeUpdate_progressBar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="modeSelector_comboBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -343,7 +319,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;modeSelector_comboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="molt_richTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt</value>
@@ -370,7 +346,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;molt_richTextBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="headphone_icon.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -397,7 +373,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;headphone_icon.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="mic_icon.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -424,7 +400,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;mic_icon.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="output_comboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -454,7 +430,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;output_comboBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="input_progressBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -478,7 +454,7 @@
     <value>data_viewer_panel</value>
   </data>
   <data name="&gt;&gt;input_progressBar.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="data_viewer_panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>1190, 25</value>
