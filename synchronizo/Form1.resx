@@ -117,30 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;mic_waveViewer.Name" xml:space="preserve">
-    <value>mic_waveViewer</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="waveViewer_formsPlot.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;mic_waveViewer.Type" xml:space="preserve">
-    <value>NAudio.Gui.WaveViewer, NAudio.WinForms, Version=2.1.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="waveViewer_formsPlot.Font" type="System.Drawing.Font, System.Drawing">
+    <value>HarvestItal, 7.8pt</value>
   </data>
-  <data name="&gt;&gt;mic_waveViewer.Parent" xml:space="preserve">
+  <data name="waveViewer_formsPlot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="waveViewer_formsPlot.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="waveViewer_formsPlot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1586, 165</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="waveViewer_formsPlot.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;waveViewer_formsPlot.Name" xml:space="preserve">
+    <value>waveViewer_formsPlot</value>
+  </data>
+  <data name="&gt;&gt;waveViewer_formsPlot.Type" xml:space="preserve">
+    <value>ScottPlot.FormsPlot, ScottPlot.WinForms, Version=4.1.57.0, Culture=neutral, PublicKeyToken=5df1dfa5321e734b</value>
+  </data>
+  <data name="&gt;&gt;waveViewer_formsPlot.Parent" xml:space="preserve">
     <value>wave_viewer_panel</value>
   </data>
-  <data name="&gt;&gt;mic_waveViewer.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;waveViewer_formsPlot.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="wave_viewer_panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="wave_viewer_panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 697</value>
   </data>
   <data name="wave_viewer_panel.Size" type="System.Drawing.Size, System.Drawing">
     <value>1586, 165</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="wave_viewer_panel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -155,27 +173,6 @@
   </data>
   <data name="&gt;&gt;wave_viewer_panel.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="mic_waveViewer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 25</value>
-  </data>
-  <data name="mic_waveViewer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1119, 123</value>
-  </data>
-  <data name="mic_waveViewer.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;mic_waveViewer.Name" xml:space="preserve">
-    <value>mic_waveViewer</value>
-  </data>
-  <data name="&gt;&gt;mic_waveViewer.Type" xml:space="preserve">
-    <value>NAudio.Gui.WaveViewer, NAudio.WinForms, Version=2.1.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
-  </data>
-  <data name="&gt;&gt;mic_waveViewer.Parent" xml:space="preserve">
-    <value>wave_viewer_panel</value>
-  </data>
-  <data name="&gt;&gt;mic_waveViewer.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="input_comboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -477,88 +474,34 @@
   <data name="&gt;&gt;data_viewer_panel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="video_viewer_wmp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="noVideoText_label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;noVideo_RichTextBox.Name" xml:space="preserve">
-    <value>noVideo_RichTextBox</value>
   </data>
-  <data name="&gt;&gt;noVideo_RichTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="noVideoText_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>HarvestItal, 28pt</value>
   </data>
-  <data name="&gt;&gt;noVideo_RichTextBox.Parent" xml:space="preserve">
-    <value>video_panel</value>
+  <data name="noVideoText_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 558</value>
   </data>
-  <data name="&gt;&gt;noVideo_RichTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="noVideoText_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>903, 52</value>
   </data>
-  <data name="&gt;&gt;video_viewer_wmp.Name" xml:space="preserve">
-    <value>video_viewer_wmp</value>
+  <data name="noVideoText_label.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;video_viewer_wmp.Type" xml:space="preserve">
-    <value>AxWMPLib.AxWindowsMediaPlayer, AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;video_viewer_wmp.Parent" xml:space="preserve">
-    <value>video_panel</value>
-  </data>
-  <data name="&gt;&gt;video_viewer_wmp.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="video_panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 25</value>
-  </data>
-  <data name="video_panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1119, 631</value>
-  </data>
-  <data name="video_panel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;video_panel.Name" xml:space="preserve">
-    <value>video_panel</value>
-  </data>
-  <data name="&gt;&gt;video_panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;video_panel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;video_panel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="noVideo_RichTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="noVideo_RichTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Harvest, 25.8pt</value>
-  </data>
-  <data name="noVideo_RichTextBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>On</value>
-  </data>
-  <data name="noVideo_RichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 565</value>
-  </data>
-  <data name="noVideo_RichTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="noVideo_RichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1119, 66</value>
-  </data>
-  <data name="noVideo_RichTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="noVideo_RichTextBox.Text" xml:space="preserve">
+  <data name="noVideoText_label.Text" xml:space="preserve">
     <value>Select a video by clicking the browse button</value>
   </data>
-  <data name="&gt;&gt;noVideo_RichTextBox.Name" xml:space="preserve">
-    <value>noVideo_RichTextBox</value>
+  <data name="&gt;&gt;noVideoText_label.Name" xml:space="preserve">
+    <value>noVideoText_label</value>
   </data>
-  <data name="&gt;&gt;noVideo_RichTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;noVideoText_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;noVideo_RichTextBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;noVideoText_label.Parent" xml:space="preserve">
     <value>video_panel</value>
   </data>
-  <data name="&gt;&gt;noVideo_RichTextBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;noVideoText_label.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="video_viewer_wmp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -601,6 +544,27 @@
   </data>
   <data name="&gt;&gt;video_viewer_wmp.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="video_panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="video_panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1119, 631</value>
+  </data>
+  <data name="video_panel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;video_panel.Name" xml:space="preserve">
+    <value>video_panel</value>
+  </data>
+  <data name="&gt;&gt;video_panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;video_panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;video_panel.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <metadata name="audio_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -681,6 +645,21 @@
   <data name="&gt;&gt;playPause_Button.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="volume_trackBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="volume_trackBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 9</value>
+  </data>
+  <data name="volume_trackBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 56</value>
+  </data>
+  <data name="volume_trackBar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="volume_trackBar.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;volume_trackBar.Name" xml:space="preserve">
     <value>volume_trackBar</value>
   </data>
@@ -712,30 +691,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;volumeZone_panel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="volume_trackBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 9</value>
-  </data>
-  <data name="volume_trackBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 56</value>
-  </data>
-  <data name="volume_trackBar.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="volume_trackBar.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;volume_trackBar.Name" xml:space="preserve">
-    <value>volume_trackBar</value>
-  </data>
-  <data name="&gt;&gt;volume_trackBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;volume_trackBar.Parent" xml:space="preserve">
-    <value>volumeZone_panel</value>
-  </data>
-  <data name="&gt;&gt;volume_trackBar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="volumeTrackBar_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -2530,6 +2485,9 @@
         AAAAAAAAe3v/Hnt7/wwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8/AAD4HwAA4B8AAMIf
         AADAEwAAiBEAAJJJAACAAQAAgAEAAJJJAACIEQAAyAMAAPhDAAD4BwAA+B8AAPz/AAA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

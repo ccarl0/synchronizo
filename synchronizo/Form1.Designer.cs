@@ -34,7 +34,6 @@ namespace synchronizo
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(synchronizo_home));
             this.wave_viewer_panel = new System.Windows.Forms.Panel();
-            this.mic_waveViewer = new NAudio.Gui.WaveViewer();
             this.input_comboBox = new System.Windows.Forms.ComboBox();
             this.output_progressBar = new System.Windows.Forms.ProgressBar();
             this.video_browser_button = new System.Windows.Forms.Button();
@@ -47,8 +46,6 @@ namespace synchronizo
             this.output_comboBox = new System.Windows.Forms.ComboBox();
             this.input_progressBar = new System.Windows.Forms.ProgressBar();
             this.video_panel = new System.Windows.Forms.Panel();
-            this.noVideo_RichTextBox = new System.Windows.Forms.RichTextBox();
-            this.video_viewer_wmp = new AxWMPLib.AxWindowsMediaPlayer();
             this.audio_timer = new System.Windows.Forms.Timer(this.components);
             this.peaksSum_timer = new System.Windows.Forms.Timer(this.components);
             this.modeSelectorUpdater_timer = new System.Windows.Forms.Timer(this.components);
@@ -57,31 +54,25 @@ namespace synchronizo
             this.volumeZone_panel = new System.Windows.Forms.Panel();
             this.volume_trackBar = new System.Windows.Forms.TrackBar();
             this.volumeTrackBar_timer = new System.Windows.Forms.Timer(this.components);
+            this.video_viewer_wmp = new AxWMPLib.AxWindowsMediaPlayer();
+            this.waveViewer_formsPlot = new ScottPlot.FormsPlot();
+            this.noVideoText_label = new System.Windows.Forms.Label();
             this.wave_viewer_panel.SuspendLayout();
             this.data_viewer_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.headphone_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mic_icon)).BeginInit();
             this.video_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.video_viewer_wmp)).BeginInit();
             this.volumeZone_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.volume_trackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.video_viewer_wmp)).BeginInit();
             this.SuspendLayout();
             // 
             // wave_viewer_panel
             // 
             this.wave_viewer_panel.BackColor = System.Drawing.Color.LightYellow;
-            this.wave_viewer_panel.Controls.Add(this.mic_waveViewer);
+            this.wave_viewer_panel.Controls.Add(this.waveViewer_formsPlot);
             resources.ApplyResources(this.wave_viewer_panel, "wave_viewer_panel");
             this.wave_viewer_panel.Name = "wave_viewer_panel";
-            // 
-            // mic_waveViewer
-            // 
-            this.mic_waveViewer.BackColor = System.Drawing.Color.PeachPuff;
-            resources.ApplyResources(this.mic_waveViewer, "mic_waveViewer");
-            this.mic_waveViewer.Name = "mic_waveViewer";
-            this.mic_waveViewer.SamplesPerPixel = 128;
-            this.mic_waveViewer.StartPosition = ((long)(0));
-            this.mic_waveViewer.WaveStream = null;
             // 
             // input_comboBox
             // 
@@ -176,26 +167,10 @@ namespace synchronizo
             // video_panel
             // 
             this.video_panel.BackColor = System.Drawing.Color.PeachPuff;
-            this.video_panel.Controls.Add(this.noVideo_RichTextBox);
+            this.video_panel.Controls.Add(this.noVideoText_label);
             this.video_panel.Controls.Add(this.video_viewer_wmp);
             resources.ApplyResources(this.video_panel, "video_panel");
             this.video_panel.Name = "video_panel";
-            // 
-            // noVideo_RichTextBox
-            // 
-            this.noVideo_RichTextBox.BackColor = System.Drawing.Color.PeachPuff;
-            this.noVideo_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.noVideo_RichTextBox.Cursor = System.Windows.Forms.Cursors.No;
-            resources.ApplyResources(this.noVideo_RichTextBox, "noVideo_RichTextBox");
-            this.noVideo_RichTextBox.ForeColor = System.Drawing.Color.Thistle;
-            this.noVideo_RichTextBox.Name = "noVideo_RichTextBox";
-            this.noVideo_RichTextBox.ReadOnly = true;
-            // 
-            // video_viewer_wmp
-            // 
-            resources.ApplyResources(this.video_viewer_wmp, "video_viewer_wmp");
-            this.video_viewer_wmp.Name = "video_viewer_wmp";
-            this.video_viewer_wmp.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video_viewer_wmp.OcxState")));
             // 
             // audio_timer
             // 
@@ -259,6 +234,23 @@ namespace synchronizo
             this.volumeTrackBar_timer.Interval = 800;
             this.volumeTrackBar_timer.Tick += new System.EventHandler(this.volumeTrackBar_timer_Tick);
             // 
+            // video_viewer_wmp
+            // 
+            resources.ApplyResources(this.video_viewer_wmp, "video_viewer_wmp");
+            this.video_viewer_wmp.Name = "video_viewer_wmp";
+            this.video_viewer_wmp.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video_viewer_wmp.OcxState")));
+            // 
+            // waveViewer_formsPlot
+            // 
+            resources.ApplyResources(this.waveViewer_formsPlot, "waveViewer_formsPlot");
+            this.waveViewer_formsPlot.Name = "waveViewer_formsPlot";
+            this.waveViewer_formsPlot.Load += new System.EventHandler(this.formsPlot1_Load);
+            // 
+            // noVideoText_label
+            // 
+            resources.ApplyResources(this.noVideoText_label, "noVideoText_label");
+            this.noVideoText_label.Name = "noVideoText_label";
+            // 
             // synchronizo_home
             // 
             resources.ApplyResources(this, "$this");
@@ -277,10 +269,11 @@ namespace synchronizo
             ((System.ComponentModel.ISupportInitialize)(this.headphone_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mic_icon)).EndInit();
             this.video_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.video_viewer_wmp)).EndInit();
+            this.video_panel.PerformLayout();
             this.volumeZone_panel.ResumeLayout(false);
             this.volumeZone_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.volume_trackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.video_viewer_wmp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,11 +283,9 @@ namespace synchronizo
         private System.Windows.Forms.Panel data_viewer_panel;
         public System.Windows.Forms.Button video_browser_button;
         public System.Windows.Forms.Panel video_panel;
-        public RichTextBox noVideo_RichTextBox;
         private ComboBox input_comboBox;
         private Timer audio_timer;
         private ProgressBar output_progressBar;
-        private NAudio.Gui.WaveViewer mic_waveViewer;
         private ProgressBar input_progressBar;
         private ComboBox output_comboBox;
         private PictureBox headphone_icon;
@@ -310,6 +301,8 @@ namespace synchronizo
         private Panel volumeZone_panel;
         private TrackBar volume_trackBar;
         private Timer volumeTrackBar_timer;
+        private ScottPlot.FormsPlot waveViewer_formsPlot;
+        private Label noVideoText_label;
     }
 }
 
