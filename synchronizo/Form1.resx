@@ -117,24 +117,108 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="waveViewer_formsPlot.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="plotTitle_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="plotTitle_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>HarvestItal, 14pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="plotTitle_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="plotTitle_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>709, 0</value>
+  </data>
+  <data name="plotTitle_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 27</value>
+  </data>
+  <data name="plotTitle_label.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="plotTitle_label.Text" xml:space="preserve">
+    <value>Microphone Wave</value>
+  </data>
+  <data name="&gt;&gt;plotTitle_label.Name" xml:space="preserve">
+    <value>plotTitle_label</value>
+  </data>
+  <data name="&gt;&gt;plotTitle_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;plotTitle_label.Parent" xml:space="preserve">
+    <value>wave_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;plotTitle_label.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="startStopWaveIn_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 1</value>
+  </data>
+  <data name="startStopWaveIn_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="startStopWaveIn_button.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="startStopWaveIn_button.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="&gt;&gt;startStopWaveIn_button.Name" xml:space="preserve">
+    <value>startStopWaveIn_button</value>
+  </data>
+  <data name="&gt;&gt;startStopWaveIn_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;startStopWaveIn_button.Parent" xml:space="preserve">
+    <value>wave_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;startStopWaveIn_button.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="autoAxis_cBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="autoAxis_cBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>916, 4</value>
+  </data>
+  <data name="autoAxis_cBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 20</value>
+  </data>
+  <data name="autoAxis_cBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="autoAxis_cBox.Text" xml:space="preserve">
+    <value>Auto-axis</value>
+  </data>
+  <data name="&gt;&gt;autoAxis_cBox.Name" xml:space="preserve">
+    <value>autoAxis_cBox</value>
+  </data>
+  <data name="&gt;&gt;autoAxis_cBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;autoAxis_cBox.Parent" xml:space="preserve">
+    <value>wave_viewer_panel</value>
+  </data>
+  <data name="&gt;&gt;autoAxis_cBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="waveViewer_formsPlot.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="waveViewer_formsPlot.Font" type="System.Drawing.Font, System.Drawing">
     <value>HarvestItal, 7.8pt</value>
   </data>
   <data name="waveViewer_formsPlot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>-13, 0</value>
   </data>
   <data name="waveViewer_formsPlot.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
   <data name="waveViewer_formsPlot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1586, 165</value>
+    <value>1609, 211</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="waveViewer_formsPlot.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -148,16 +232,16 @@
     <value>wave_viewer_panel</value>
   </data>
   <data name="&gt;&gt;waveViewer_formsPlot.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="wave_viewer_panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
   <data name="wave_viewer_panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 697</value>
+    <value>0, 699</value>
   </data>
   <data name="wave_viewer_panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1586, 165</value>
+    <value>1586, 203</value>
   </data>
   <data name="wave_viewer_panel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -585,7 +669,7 @@
     <value>NoControl</value>
   </data>
   <data name="volume_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
+    <value>3, -2</value>
   </data>
   <data name="volume_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 40</value>
@@ -625,7 +709,7 @@
     <value>NoControl</value>
   </data>
   <data name="playPause_Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 656</value>
+    <value>27, 656</value>
   </data>
   <data name="playPause_Button.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 40</value>
@@ -649,7 +733,7 @@
     <value>NoControl</value>
   </data>
   <data name="volume_trackBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 9</value>
+    <value>61, 3</value>
   </data>
   <data name="volume_trackBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 56</value>
@@ -696,6 +780,9 @@
   <metadata name="volumeTrackBar_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>570, 17</value>
   </metadata>
+  <metadata name="plotRender_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>971, 21</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -706,7 +793,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1586, 862</value>
+    <value>1586, 902</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2486,9 +2573,6 @@
         AADAEwAAiBEAAJJJAACAAQAAgAEAAJJJAACIEQAAyAMAAPhDAAD4BwAA+B8AAPz/AAA=
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -2517,6 +2601,12 @@
     <value>volumeTrackBar_timer</value>
   </data>
   <data name="&gt;&gt;volumeTrackBar_timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;plotRender_timer.Name" xml:space="preserve">
+    <value>plotRender_timer</value>
+  </data>
+  <data name="&gt;&gt;plotRender_timer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

@@ -34,6 +34,9 @@ namespace synchronizo
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(synchronizo_home));
             this.wave_viewer_panel = new System.Windows.Forms.Panel();
+            this.startStopWaveIn_button = new System.Windows.Forms.Button();
+            this.autoAxis_cBox = new System.Windows.Forms.CheckBox();
+            this.waveViewer_formsPlot = new ScottPlot.FormsPlot();
             this.input_comboBox = new System.Windows.Forms.ComboBox();
             this.output_progressBar = new System.Windows.Forms.ProgressBar();
             this.video_browser_button = new System.Windows.Forms.Button();
@@ -46,6 +49,8 @@ namespace synchronizo
             this.output_comboBox = new System.Windows.Forms.ComboBox();
             this.input_progressBar = new System.Windows.Forms.ProgressBar();
             this.video_panel = new System.Windows.Forms.Panel();
+            this.noVideoText_label = new System.Windows.Forms.Label();
+            this.video_viewer_wmp = new AxWMPLib.AxWindowsMediaPlayer();
             this.audio_timer = new System.Windows.Forms.Timer(this.components);
             this.peaksSum_timer = new System.Windows.Forms.Timer(this.components);
             this.modeSelectorUpdater_timer = new System.Windows.Forms.Timer(this.components);
@@ -54,25 +59,47 @@ namespace synchronizo
             this.volumeZone_panel = new System.Windows.Forms.Panel();
             this.volume_trackBar = new System.Windows.Forms.TrackBar();
             this.volumeTrackBar_timer = new System.Windows.Forms.Timer(this.components);
-            this.video_viewer_wmp = new AxWMPLib.AxWindowsMediaPlayer();
-            this.waveViewer_formsPlot = new ScottPlot.FormsPlot();
-            this.noVideoText_label = new System.Windows.Forms.Label();
+            this.plotRender_timer = new System.Windows.Forms.Timer(this.components);
+            this.plotTitle_label = new System.Windows.Forms.Label();
             this.wave_viewer_panel.SuspendLayout();
             this.data_viewer_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.headphone_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mic_icon)).BeginInit();
             this.video_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.video_viewer_wmp)).BeginInit();
             this.volumeZone_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.volume_trackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.video_viewer_wmp)).BeginInit();
             this.SuspendLayout();
             // 
             // wave_viewer_panel
             // 
             this.wave_viewer_panel.BackColor = System.Drawing.Color.LightYellow;
+            this.wave_viewer_panel.Controls.Add(this.plotTitle_label);
+            this.wave_viewer_panel.Controls.Add(this.startStopWaveIn_button);
+            this.wave_viewer_panel.Controls.Add(this.autoAxis_cBox);
             this.wave_viewer_panel.Controls.Add(this.waveViewer_formsPlot);
             resources.ApplyResources(this.wave_viewer_panel, "wave_viewer_panel");
             this.wave_viewer_panel.Name = "wave_viewer_panel";
+            // 
+            // startStopWaveIn_button
+            // 
+            resources.ApplyResources(this.startStopWaveIn_button, "startStopWaveIn_button");
+            this.startStopWaveIn_button.Name = "startStopWaveIn_button";
+            this.startStopWaveIn_button.UseVisualStyleBackColor = true;
+            this.startStopWaveIn_button.Click += new System.EventHandler(this.startStopWaveIn_button_Click);
+            // 
+            // autoAxis_cBox
+            // 
+            resources.ApplyResources(this.autoAxis_cBox, "autoAxis_cBox");
+            this.autoAxis_cBox.Checked = true;
+            this.autoAxis_cBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.autoAxis_cBox.Name = "autoAxis_cBox";
+            this.autoAxis_cBox.UseVisualStyleBackColor = true;
+            // 
+            // waveViewer_formsPlot
+            // 
+            resources.ApplyResources(this.waveViewer_formsPlot, "waveViewer_formsPlot");
+            this.waveViewer_formsPlot.Name = "waveViewer_formsPlot";
             // 
             // input_comboBox
             // 
@@ -172,6 +199,17 @@ namespace synchronizo
             resources.ApplyResources(this.video_panel, "video_panel");
             this.video_panel.Name = "video_panel";
             // 
+            // noVideoText_label
+            // 
+            resources.ApplyResources(this.noVideoText_label, "noVideoText_label");
+            this.noVideoText_label.Name = "noVideoText_label";
+            // 
+            // video_viewer_wmp
+            // 
+            resources.ApplyResources(this.video_viewer_wmp, "video_viewer_wmp");
+            this.video_viewer_wmp.Name = "video_viewer_wmp";
+            this.video_viewer_wmp.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video_viewer_wmp.OcxState")));
+            // 
             // audio_timer
             // 
             this.audio_timer.Interval = 10;
@@ -234,22 +272,14 @@ namespace synchronizo
             this.volumeTrackBar_timer.Interval = 800;
             this.volumeTrackBar_timer.Tick += new System.EventHandler(this.volumeTrackBar_timer_Tick);
             // 
-            // video_viewer_wmp
+            // plotRender_timer
             // 
-            resources.ApplyResources(this.video_viewer_wmp, "video_viewer_wmp");
-            this.video_viewer_wmp.Name = "video_viewer_wmp";
-            this.video_viewer_wmp.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video_viewer_wmp.OcxState")));
+            this.plotRender_timer.Tick += new System.EventHandler(this.plotRender_timer_Tick);
             // 
-            // waveViewer_formsPlot
+            // plotTitle_label
             // 
-            resources.ApplyResources(this.waveViewer_formsPlot, "waveViewer_formsPlot");
-            this.waveViewer_formsPlot.Name = "waveViewer_formsPlot";
-            this.waveViewer_formsPlot.Load += new System.EventHandler(this.formsPlot1_Load);
-            // 
-            // noVideoText_label
-            // 
-            resources.ApplyResources(this.noVideoText_label, "noVideoText_label");
-            this.noVideoText_label.Name = "noVideoText_label";
+            resources.ApplyResources(this.plotTitle_label, "plotTitle_label");
+            this.plotTitle_label.Name = "plotTitle_label";
             // 
             // synchronizo_home
             // 
@@ -265,15 +295,16 @@ namespace synchronizo
             this.Name = "synchronizo_home";
             this.Load += new System.EventHandler(this.synchronizo_Load);
             this.wave_viewer_panel.ResumeLayout(false);
+            this.wave_viewer_panel.PerformLayout();
             this.data_viewer_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.headphone_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mic_icon)).EndInit();
             this.video_panel.ResumeLayout(false);
             this.video_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.video_viewer_wmp)).EndInit();
             this.volumeZone_panel.ResumeLayout(false);
             this.volumeZone_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.volume_trackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.video_viewer_wmp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,6 +334,10 @@ namespace synchronizo
         private Timer volumeTrackBar_timer;
         private ScottPlot.FormsPlot waveViewer_formsPlot;
         private Label noVideoText_label;
+        private CheckBox autoAxis_cBox;
+        private Button startStopWaveIn_button;
+        private Timer plotRender_timer;
+        private Label plotTitle_label;
     }
 }
 

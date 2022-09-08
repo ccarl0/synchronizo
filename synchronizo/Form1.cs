@@ -18,6 +18,7 @@ namespace synchronizo
         string videoPath;
         int peaksSum = 0;
         int prevVolume = 0;
+        bool waveRecording = false;
         
         public synchronizo_home()
         {
@@ -44,27 +45,16 @@ namespace synchronizo
         }
 
         //-----------------------------
-        private void ScanSoundCards()
-        {
-            input_comboBox.Items.Clear();
-            for (int i = 0; i < NAudio.Wave.WaveIn.DeviceCount; i++)
-                input_comboBox.Items.Add(NAudio.Wave.WaveIn.GetCapabilities(i).ProductName);
-            if (input_comboBox.Items.Count > 0)
-                input_comboBox.SelectedIndex = 0;
-            else
-                MessageBox.Show("ERROR: no recording devices available");
-        }
-
         private double[] amplitudes;
         private void PlotInitialize(int pointCount = 500)
         {
             amplitudes = new double[pointCount];
-            waveViewer_formsPlot.plt.Clear();
-            waveViewer_formsPlot.plt.PlotSignal(amplitudes, sampleRate: 1000.0 / 20, markerSize: 0);
-            waveViewer_formsPlot.plt.PlotVLine(0, color: Color.Red, lineWidth: 2);
-            waveViewer_formsPlot.plt.PlotHLine(0, color: Color.Black, lineWidth: 2);
-            waveViewer_formsPlot.plt.YLabel("Amplitude (%)");
-            waveViewer_formsPlot.plt.XLabel("Time (seconds)");
+            waveViewer_formsPlot.Plot.Clear();
+            waveViewer_formsPlot.Plot.AddSignal(amplitudes, sampleRate: 1000.0 / 20);
+            waveViewer_formsPlot.Plot.AddVerticalLine(0, color: Color.Red, width: 1);
+            waveViewer_formsPlot.Plot.AddVerticalLine(0, color: Color.Black, width: 1);
+            waveViewer_formsPlot.Plot.YLabel("Amplitude (%)");
+            waveViewer_formsPlot.Plot.XLabel("Time (seconds)");
             waveViewer_formsPlot.Render();
         }
 
@@ -74,8 +64,8 @@ namespace synchronizo
             amplitudes[amplitudesIndex] = value;
         }
 
-        private NAudio.Wave.WaveInEvent wvin;
-        private int buffersRead = -1;
+        private WaveInEvent wvin;
+        private int buffersRead = 0;
         private double peakAmplitudeSeen = 0;
         private void OnDataAvailable(object sender, NAudio.Wave.WaveInEventArgs args)
         {
@@ -91,27 +81,63 @@ namespace synchronizo
             amplitude = amplitude / peakAmplitudeSeen * 100;
             buffersRead += 1;
 
-            // TODO: make this sane
-            //ScottPlot.PlottableAxLine axLine = (ScottPlot.PlottableAxLine)scottPlotUC1.plt.GetPlottables()[1];
-            //axLine.position = (buffersRead % amplitudes.Length) * 20.0 / 1000.0;
-
-            Console.WriteLine(string.Format("Buffer {0:000} amplitude: {1:00.00}%", buffersRead, amplitude));
+            //Console.WriteLine(string.Format("Buffer {0:000} amplitude: {1:00.00}%", buffersRead, amplitude));
             PlotAddPoint(amplitude);
         }
 
-        private void AudioMonitorInitialize(int DeviceIndex, int sampleRate = 8000, int bitRate = 16,
-                int channels = 1, int bufferMilliseconds = 20, bool start = true)
+        private void AudioMonitorInitialize(int DeviceIndex, int sampleRate = 8000, int bitRate = 16, int channels = 1, int bufferMilliseconds = 20, bool start = true)
         {
+            Console.WriteLine("AudioMonitorInitialize");
             if (wvin == null)
             {
-                wvin = new NAudio.Wave.WaveInEvent();
+                wvin = new WaveInEvent();
                 wvin.DeviceNumber = DeviceIndex;
-                wvin.WaveFormat = new NAudio.Wave.WaveFormat(sampleRate, bitRate, channels);
+                wvin.WaveFormat = new WaveFormat(sampleRate, bitRate, channels);
                 wvin.DataAvailable += OnDataAvailable;
                 wvin.BufferMilliseconds = bufferMilliseconds;
                 if (start)
+                {
+                    Console.WriteLine("Rec started");
                     wvin.StartRecording();
+                }
             }
+        }
+
+        private void startStopWaveIn_button_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("startStopWaveIn_button_Click");
+
+            if (waveRecording)
+            {
+                if (wvin != null)
+                {
+                    wvin.StopRecording();
+                    waveRecording = true;
+                    wvin = null;
+                }
+                plotRender_timer.Start();
+                Console.WriteLine("Rec stopped");
+                waveRecording = false;
+                startStopWaveIn_button.Text = "Start";
+            }
+            else if (!waveRecording)
+            {
+                plotRender_timer.Start();
+                AudioMonitorInitialize(input_comboBox.SelectedIndex);
+                Console.WriteLine("Rec started");
+                waveRecording = true;
+                startStopWaveIn_button.Text = "Stop";
+
+            }
+        }
+        private void plotRender_timer_Tick(object sender, EventArgs e)
+        {
+            if (autoAxis_cBox.Checked)
+            {
+                waveViewer_formsPlot.Plot.AxisAuto();
+                //waveViewer_formsPlot.Plot.TightenLayout();
+            }
+            waveViewer_formsPlot.Render();
         }
         //-----------------------------
 
@@ -184,6 +210,7 @@ namespace synchronizo
                 var output_device = (MMDevice)output_comboBox.SelectedItem;
                 output_progressBar.Value = (int)(output_device.AudioMeterInformation.MasterPeakValue * 100);
             }
+            
 
         }
 
@@ -284,7 +311,7 @@ namespace synchronizo
 
         private void volume_button_Click(object sender, EventArgs e)
         {
-            Console.Write("Volume button clicked");
+            Console.Write("volume_button_Click");
             if (video_viewer_wmp.settings.volume != 0)
             {
                 Console.WriteLine(", saving previous volume value, volume = 0, updating volume trackbar");
@@ -302,24 +329,24 @@ namespace synchronizo
 
         private void volume_button_MouseHover(object sender, EventArgs e)
         {
-            Console.WriteLine("Mouse hovering volume button");
+            Console.WriteLine("volume_button_MouseHover");
             volume_trackBar.Visible = true;
         }
         private void volume_zone_Leave(object sender, EventArgs e)
         {
-            Console.WriteLine("Mouse left volume button, starting timer");
+            Console.WriteLine("volume_zone_Leave");
             volumeTrackBar_timer.Start();
         }
 
         private void volume_trackBar_MouseHover(object sender, EventArgs e)
         {
-            Console.WriteLine("Mouse hovering volume trackbar");
+            Console.WriteLine("volume_trackBar_MouseHover");
             volumeTrackBar_timer.Stop();
         }
 
         private void volumeTrackBar_timer_Tick(object sender, EventArgs e)
         {
-            Console.WriteLine("Volume timer finished, hiding volume trackbar and stopping timer");
+            Console.WriteLine("volumeTrackBar_timer_Tick, hiding volume trackbar and stopping timer");
             volumeTrackBar_timer.Stop();
             volume_trackBar.Visible = false;
         }
@@ -328,11 +355,6 @@ namespace synchronizo
         {
             Console.WriteLine("User changing volume trackbar value, updating wmp volume");
             video_viewer_wmp.settings.volume = volume_trackBar.Value;
-        }
-
-        private void formsPlot1_Load(object sender, EventArgs e)
-        {
-
         }
 
         
