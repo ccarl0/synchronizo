@@ -207,5 +207,8 @@
   <ItemGroup>
     <None Include="resources\icons\volume-off.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\speaker.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

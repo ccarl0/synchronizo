@@ -34,6 +34,7 @@ namespace synchronizo
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(synchronizo_home));
             this.wave_viewer_panel = new System.Windows.Forms.Panel();
+            this.plotTitle_label = new System.Windows.Forms.Label();
             this.startStopWaveIn_button = new System.Windows.Forms.Button();
             this.autoAxis_cBox = new System.Windows.Forms.CheckBox();
             this.waveViewer_formsPlot = new ScottPlot.FormsPlot();
@@ -60,7 +61,6 @@ namespace synchronizo
             this.volume_trackBar = new System.Windows.Forms.TrackBar();
             this.volumeTrackBar_timer = new System.Windows.Forms.Timer(this.components);
             this.plotRender_timer = new System.Windows.Forms.Timer(this.components);
-            this.plotTitle_label = new System.Windows.Forms.Label();
             this.wave_viewer_panel.SuspendLayout();
             this.data_viewer_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.headphone_icon)).BeginInit();
@@ -80,6 +80,11 @@ namespace synchronizo
             this.wave_viewer_panel.Controls.Add(this.waveViewer_formsPlot);
             resources.ApplyResources(this.wave_viewer_panel, "wave_viewer_panel");
             this.wave_viewer_panel.Name = "wave_viewer_panel";
+            // 
+            // plotTitle_label
+            // 
+            resources.ApplyResources(this.plotTitle_label, "plotTitle_label");
+            this.plotTitle_label.Name = "plotTitle_label";
             // 
             // startStopWaveIn_button
             // 
@@ -231,7 +236,7 @@ namespace synchronizo
             resources.ApplyResources(this.volume_button, "volume_button");
             this.volume_button.FlatAppearance.BorderSize = 0;
             this.volume_button.ForeColor = System.Drawing.Color.Transparent;
-            this.volume_button.Image = global::synchronizo.Properties.Resources.volume_off;
+            this.volume_button.Image = global::synchronizo.Properties.Resources.speaker;
             this.volume_button.Name = "volume_button";
             this.volume_button.UseVisualStyleBackColor = false;
             this.volume_button.Click += new System.EventHandler(this.volume_button_Click);
@@ -275,11 +280,6 @@ namespace synchronizo
             // plotRender_timer
             // 
             this.plotRender_timer.Tick += new System.EventHandler(this.plotRender_timer_Tick);
-            // 
-            // plotTitle_label
-            // 
-            resources.ApplyResources(this.plotTitle_label, "plotTitle_label");
-            this.plotTitle_label.Name = "plotTitle_label";
             // 
             // synchronizo_home
             // 

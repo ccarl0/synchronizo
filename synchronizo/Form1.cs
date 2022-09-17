@@ -67,6 +67,7 @@ namespace synchronizo
         private WaveInEvent wvin;
         private int buffersRead = 0;
         private double peakAmplitudeSeen = 0;
+        public double amplitudeMic = 0;
         private void OnDataAvailable(object sender, NAudio.Wave.WaveInEventArgs args)
         {
             int bytesPerSample = wvin.WaveFormat.BitsPerSample / 8;
@@ -83,6 +84,8 @@ namespace synchronizo
 
             //Console.WriteLine(string.Format("Buffer {0:000} amplitude: {1:00.00}%", buffersRead, amplitude));
             PlotAddPoint(amplitude);
+            amplitudeMic = amplitude;
+            //Console.WriteLine(amplitude);
         }
 
         private void AudioMonitorInitialize(int DeviceIndex, int sampleRate = 8000, int bitRate = 16, int channels = 1, int bufferMilliseconds = 20, bool start = true)
@@ -199,11 +202,7 @@ namespace synchronizo
         {
             if (input_comboBox.SelectedItem != null)
             {
-                var input_device = (MMDevice)input_comboBox.SelectedItem;
-                int peakValue = (int)(input_device.AudioMeterInformation.MasterPeakValue);
-                input_progressBar.Value = peakValue * 100;
-                
-                peaksSum += peakValue;
+                input_progressBar.Value = (int)amplitudeMic;
             }
             if (output_comboBox.SelectedItem != null)
             {
@@ -216,42 +215,35 @@ namespace synchronizo
 
         private void peaksSum_timer_Tick(object sender, EventArgs e)
         {
-            //peaksSum max = 320
+            //peaksSum max = 100
             //peaksSum min = 0
+            Console.WriteLine(amplitudeMic);
             if (modeSelector_comboBox.SelectedIndex == 0) //noisy is faster
             {
-                if (peaksSum >= 250)
+                if (amplitudeMic >= 75)
                 {
                     video_viewer_wmp.settings.rate = 2;
                 }
-                else if (peaksSum < 250 && peaksSum >= 150)
+                else if (amplitudeMic < 75 && amplitudeMic >= 25)
                 {
                     video_viewer_wmp.settings.rate = 1;
                 }
-                else if (peaksSum < 150 && peaksSum >= 50)
+                else if (amplitudeMic < 25)
                 {
-                    video_viewer_wmp.settings.rate = 0.75;
-                }
-                else
-                {
-                    video_viewer_wmp.settings.rate = 0.25;
+                    video_viewer_wmp.settings.rate = 0.5;
                 }
             }
             else if (modeSelector_comboBox.SelectedIndex == 1) //noisy is slower
             {
-                if (peaksSum >= 250)
+                if (amplitudeMic >= 75)
                 {
-                    video_viewer_wmp.settings.rate = 0.25;
+                    video_viewer_wmp.settings.rate = 0.5;
                 }
-                else if (peaksSum < 250 && peaksSum >= 150)
-                {
-                    video_viewer_wmp.settings.rate = 0.75;
-                }
-                else if (peaksSum < 150 && peaksSum >= 50)
+                else if (amplitudeMic < 75 && amplitudeMic >= 25)
                 {
                     video_viewer_wmp.settings.rate = 1;
                 }
-                else
+                else if (amplitudeMic < 25)
                 {
                     video_viewer_wmp.settings.rate = 2;
                 }
@@ -261,16 +253,16 @@ namespace synchronizo
                 video_viewer_wmp.settings.rate = 1;
             }
 
-            Console.Write("Peaksum: ");
-            Console.WriteLine(peaksSum);
-            Console.Write(video_viewer_wmp.settings.rate);
-            Console.WriteLine("X");
+            //Console.Write("Peaksum: ");
+            //Console.WriteLine(peaksSum);
+            //Console.Write(video_viewer_wmp.settings.rate);
+            //Console.WriteLine("X");
             
             molt_richTextBox.Text = $"{video_viewer_wmp.settings.rate} X";
             molt_richTextBox.SelectAll();
             molt_richTextBox.SelectionAlignment = HorizontalAlignment.Center;
             molt_richTextBox.DeselectAll();
-            Console.WriteLine(video_viewer_wmp.playState);
+            //Console.WriteLine(video_viewer_wmp.playState);
 
             peaksSum = 0;
             modeUpdate_progressBar.Value = 0;
@@ -318,12 +310,14 @@ namespace synchronizo
                 prevVolume = video_viewer_wmp.settings.volume;
                 video_viewer_wmp.settings.volume = 0;
                 volume_trackBar.Value = 0;
+                volume_button.Image = synchronizo.Properties.Resources.volume_off;
             }
             else
             {
                 Console.WriteLine(", volume = prevValue");
                 video_viewer_wmp.settings.volume = prevVolume;
                 volume_trackBar.Value = prevVolume;
+                volume_button.Image = synchronizo.Properties.Resources.speaker;
             }
         }
 
