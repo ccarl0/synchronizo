@@ -214,6 +214,7 @@ namespace synchronizo
             resources.ApplyResources(this.video_viewer_wmp, "video_viewer_wmp");
             this.video_viewer_wmp.Name = "video_viewer_wmp";
             this.video_viewer_wmp.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video_viewer_wmp.OcxState")));
+            this.video_viewer_wmp.Enter += new System.EventHandler(this.video_viewer_wmp_Enter);
             // 
             // audio_timer
             // 

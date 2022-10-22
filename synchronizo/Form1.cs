@@ -351,6 +351,9 @@ namespace synchronizo
             video_viewer_wmp.settings.volume = volume_trackBar.Value;
         }
 
-        
+        private void video_viewer_wmp_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
